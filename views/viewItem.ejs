@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>ITEMS</h1>
+        <ul>
+            <% items.forEach((item)=>{%>
+            <li><%= item.item_id %></li>
+            <li>category_id <%= item.category_id %></li>
+            <li>item_name <%= item.item_name %></li>
+            <li>price <%= item.price %></li>
+            <li>quantity <%= item.quantity %></li>
+
+            <% }); %>
+        </ul>
+        <a href="/categories">go back to home page </a>
+    </body>
+</html>
