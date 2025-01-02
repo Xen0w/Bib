@@ -11,14 +11,12 @@
             <% items.forEach((item)=>{ %>
 
             <li>
-                <a href="/items/item/<%= item.item_id %>"
-                    ><%= item.item_name %></a
-                >
+                <a href="/item/<%= item.item_id %>"><%= item.item_name %></a>
             </li>
 
             <% }); %>
         </ul>
-        <a href="/categories/<%= category_name %>/items"
+        <a href="/<%= category_name %>/items"
             ><button>Create new Item</button></a
         >
     </body>

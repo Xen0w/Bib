@@ -10,13 +10,12 @@
         <ul>
             <% categories.forEach((cat)=>{%>
             <li>
-                <a
-                    href="/categories/<%= cat.category_name %>/<%= cat.category_id %>"
+                <a href="/<%= cat.category_name %>/<%= cat.category_id %>"
                     ><%= cat.category_name %></a
                 >
             </li>
             <% }); %>
         </ul>
-        <a href="/categories/category"><button>Create new Category</button></a>
+        <a href="/category"><button>Create new Category</button></a>
     </body>
 </html>
